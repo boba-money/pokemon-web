@@ -4,31 +4,50 @@
     <style>
         #charizard{
             border: solid orange;
+        }
+        
+        img{
             padding: 15px;
-            height : auto;
+            height : 200px;
             width : 200px;
         }
-        div{
-            width: 200px;
-            
+        .row{
+            flex-direction: row;
+            flex-wrap: nowrap;
         }
-        ul{
-            display:inline-block;
-            border:solid orange;
-            padding: 15px;
+        .block{
             width: 200px;
+            font-family: Arial, Helvetica, sans-serif;
+            display:inline-block;
+            padding: 20px;
+            width: 200px;
+            height: auto;
+            margin: 20px;
+        }
+        
+        #grenninja{
+            border: solid aqua;
         }
     </style>
 </head>
 <body>
-    <h1>Hello Pokemon Fan!</h1>
-    <div>
+    <h1 style="text-align: center; font-family: Arial ">Hello Pokemon Fan! Here're six famous Pokemons:)</h1>
+    <div class = "row">
+    <div class = "block">
         <img id="charizard" src="charizard.png" alt="It's a charizard">
-        <ul id="charizard_info">
+        <ul id="charizard">
             <li><b>Type: </b>Fire and flying type</li>
             <li><b>Evolution: </b>It is the final form of Charmander </li>
-            <li><b>Mega Evolution: </b>Has two Mega Evolution</li>
+            <li><b>Mega Evolution: </b>Has two Mega Evolutions</li>
         </ul>
     </div>
-    
+    <div class = "block">
+        <img id="grenninja" src="grenninja.png" alt="It's a grenninja">
+        <ul id="grenninja">
+            <li><b>Type: </b>Water and dark type</li>
+            <li><b>Evolution: </b>It is the final form of Froakie </li>
+            <li><b>Special Form: </b>Greninja can transform into a special form known as Ash-Greninja</li>
+        </ul>
+    </div>
+    </div>
 </body>
